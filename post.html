@@ -15,7 +15,13 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body style="background-color:rgb(224, 255, 255);">
+    <style>
+        body{
+       background:url('assets/img/home1-bg.jpg') no-repeat;
+       background-size: cover;
+   }
+   </style>
+    <body>
         <!-- Navigation-->
 		
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -27,7 +33,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">主页</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">首页</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">小样本学习介绍</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">小样本学习案例</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">用户现场体验</a></li>
@@ -40,9 +46,9 @@
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="post-heading">
-                            <h1 class="font-weight-bold">具体了解小样本学习</h1>
-                            <h3>----我有哪些具体实现的例子呢</h3>
+                        <div class="site-heading" style="text-align:center">
+                            <h1>具体了解FSL</h1>
+                            <span class="subheading">小样本学习能够应用的具体例子</span>
                             
                         </div>
                     </div>
@@ -53,25 +59,25 @@
         <article class="mb-4">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
-						<h2 class="section-heading" style=" font-family:“Microsoft YaHei”,微软雅黑,“MicrosoftJhengHei”,华文细黑,STHeiti,MingLiu;">人脸识别</h2>
-                        <p style="color: rgb(31, 42, 54);">FaceNet是一种基于小样本学习的人脸识别算法。它使用了Triplet Loss损失函数来学习人脸的嵌入表示，并使用少量的正样本和负样本进行微调。该算法已经应用于人脸识别门禁系统等场景中。</p></div>
-						<div class="col-md-10 col-lg-8 col-xl-7" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
-						<h2 class="section-heading" style=" font-family:“Microsoft YaHei”,微软雅黑,“MicrosoftJhengHei”,华文细黑,STHeiti,MingLiu;">目标检测</h2>
-                        <p style="color: rgb(31, 42, 54);">YOLOv4-tiny是一种基于小样本学习的目标检测算法。它使用了少量的标注数据和预训练的特征提取器进行微调，从而实现了在小数据集上的高效训练和推理。该算法已经应用于工业质检等场景中。</p></div>
-						<div class="col-md-10 col-lg-8 col-xl-7" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
-						<h2 class="section-heading" style=" font-family:“Microsoft YaHei”,微软雅黑,“MicrosoftJhengHei”,华文细黑,STHeiti,MingLiu;">自然语言处理</h2>
-                        <p style="color: rgb(31, 42, 54);">GPT-3是一种基于小样本学习的自然语言处理模型。它使用了数百亿的无标注数据进行预训练，并使用少量的标注数据进行微调，从而实现了在多种NLP任务上的高水平表现，如问答、文本生成等。</p></div>
-						<div class="col-md-10 col-lg-8 col-xl-7" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
-                        <h2 class="section-heading" style=" font-family:“Microsoft YaHei”,微软雅黑,“MicrosoftJhengHei”,华文细黑,STHeiti,MingLiu;">机器人控制</h2>
+                    <div class="col-md-20 col-lg-10 col-xl-10">
+						<h2 class="section-heading" style="color: rgb(62, 59, 66);">人脸识别</h2>
+                        <p style="color: rgb(86, 84, 88);">FaceNet是一种基于小样本学习的人脸识别算法。它使用了Triplet Loss损失函数来学习人脸的嵌入表示，并使用少量的正样本和负样本进行微调。该算法已经应用于人脸识别门禁系统等场景中。</p></div>
+						<div class="col-md-20 col-lg-10 col-xl-10">
+						<h2 class="section-heading" style="color: rgb(62, 59, 66);">目标检测</h2>
+                        <p style="color: rgb(86, 84, 88);">YOLOv4-tiny是一种基于小样本学习的目标检测算法。它使用了少量的标注数据和预训练的特征提取器进行微调，从而实现了在小数据集上的高效训练和推理。该算法已经应用于工业质检等场景中。</p></div>
+						<div class="col-md-20 col-lg-10 col-xl-10">
+						<h2 class="section-heading" style="color: rgb(62, 59, 66);">自然语言处理</h2>
+                        <p style="color: rgb(86, 84, 88);">GPT-3是一种基于小样本学习的自然语言处理模型。它使用了数百亿的无标注数据进行预训练，并使用少量的标注数据进行微调，从而实现了在多种NLP任务上的高水平表现，如问答、文本生成等。</p></div>
+						<div class="col-md-20 col-lg-10 col-xl-10">
+                        <h2 class="section-heading" style="color: rgb(62, 59, 66);">机器人控制</h2>
                         <p>Meta-RL是一种基于小样本学习的增强学习算法，它通过在少量任务上学习策略，并在新任务上快速适应来实现高效的增强学习。该算法已经应用于机器人控制、游戏玩法等场景中。</p>
                         
-                        <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+                        <!-- <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
                         
                         <h2 class="section-heading">Reaching for the Stars</h2>
                         
                         <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                        
+                         -->
                         
                         <!-- <p>
                             Placeholder text by
@@ -83,7 +89,7 @@
                 </div>
             </div>
         </article>
-        <!-- Footer-->
+        <!-- Footer
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -118,7 +124,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
