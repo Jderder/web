@@ -15,7 +15,14 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body style="background-color:rgb(224, 255, 255);">
+    <style>
+         body{
+        background:url('assets/img/home1-bg.jpg') no-repeat;
+        background-size: cover;
+    }
+    </style>
+   
+    <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -40,7 +47,8 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                            <h1>小样本学习      Few-Shot</h1>
+                            <h1>小样本学习</h1>
+                            <h2>Few Shot Learning</h2>
                             <span class="subheading">一种基于少量样本的高效学习方法</span>
                         </div>
                     </div>
@@ -50,22 +58,22 @@
         <!-- Main Content-->
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="col-md-20 col-lg-10 col-xl-10">
                     <!-- Post preview-->
-                    <div class="post-preview" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
+                    <div class="post-preview" style=width:fit-content;height:fit-content;>
                         <a href="post.html">
                             <h2 class="post-title">元学习（meta-learning）</h2>
-                            <h3 class="post-subtitle">元学习是一种学习如何快速适应新任务的方法，其中模型在训练过程中使用了大量的小样本学习任务。例如，使用元学习可以训练一个模型，使其能够在仅有几个标注样本的情况下识别新类别的图像。</h3>
+                            <h4 class="post-subtitle"style=vista>元学习是一种学习如何快速适应新任务的方法，其中模型在训练过程中使用了大量的小样本学习任务。例如，使用元学习可以训练一个模型，使其能够在仅有几个标注样本的情况下识别新类别的图像。</h4>
                         </a>
                         
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
                     <!-- Post preview-->
-                    <div class="post-preview" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
+                    <div class="post-preview" style="width:auto;height:fit-content;">
                         <a href="post.html">
 							<h2 class="post-title">Siamese网络</h2>
-							<h3 class="post-subtitle">Siamese网络是一种比较相似性的方法，它可以学习将两个输入映射到相同的特征空间中，并计算它们之间的距离。这种方法在小样本学习中特别有用，因为它可以利用少量的训练数据来学习如何计算图像或文本之间的相似性。</h3>
+							<h4 class="post-subtitle">Siamese网络是一种比较相似性的方法，它可以学习将两个输入映射到相同的特征空间中，并计算它们之间的距离。这种方法在小样本学习中特别有用，因为它可以利用少量的训练数据来学习如何计算图像或文本之间的相似性。</h4>
 							
 							</a>
                         
@@ -73,32 +81,32 @@
                     <!-- Divider-->
                     <hr class="my-4" />
                     <!-- Post preview-->
-                    <div class="post-preview" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
+                    <div class="post-preview">
                         <a href="post.html">
                             <h2 class="post-title">对抗生成网络（GANs）</h2>
-                            <h3 class="post-subtitle">对抗生成网络是一种生成模型，可以从少量的训练数据中学习生成新的样本。例如，使用GANs可以从仅有几个图像样本中生成更多的图像，并且可以通过多个训练迭代逐渐改进生成效果。</h3>
+                            <h4 class="post-subtitle">对抗生成网络是一种生成模型，可以从少量的训练数据中学习生成新的样本。例如，使用GANs可以从仅有几个图像样本中生成更多的图像，并且可以通过多个训练迭代逐渐改进生成效果。</h4>
                         </a>
                     
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
                     <!-- Post preview-->
-                    <div class="post-preview" style="background: linear-gradient(rgba(170, 216, 234, 0.76),LightCyan);width: fit-content;height: fit-content;">
+                    <div class="post-preview">
                         <a href="post.html">
                             <h2 class="post-title">模型微调（fine-tuning）</h2>
-                            <h3 class="post-subtitle">模型微调是指使用预先训练好的模型来快速学习新任务的方法。在小样本学习中，可以使用已经在大规模数据集上训练好的模型，并将其微调到新的数据集中。</h3>
+                            <h4 class="post-subtitle">模型微调是指使用预先训练好的模型来快速学习新任务的方法。在小样本学习中，可以使用已经在大规模数据集上训练好的模型，并将其微调到新的数据集中。</h4>
                         </a>
                        
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
                     <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                    <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">下一页 →</a></div> -->
                 </div>
             </div>
         </div>
         <!-- Footer-->
-        <footer class="border-top">
+        <!-- <footer class="border-top">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
@@ -132,7 +140,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
