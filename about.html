@@ -15,6 +15,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+        body{
+       background:url('assets/img/home1-bg.jpg') no-repeat;
+       background-size: cover;
+   }
+   </style>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -26,7 +32,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">主页</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">首页</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">小样本学习介绍</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">小样本学习案例</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">用户现场体验</a></li>
@@ -51,22 +57,22 @@
         <main class="mb-4">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-						<p>我为什么会出现</p>
-						<p>数据稀缺性：在某些领域，例如医疗诊断、图像识别等，获取大量的数据是非常困难的，因为需要人类专业知识、时间和资源的支持。</p>
-						<p>数据隐私：某些领域的数据受到法律法规的保护，例如个人健康记录等，这些数据不易获取。</p>
-						<p>人类专业知识：在某些领域，例如工业控制、自动驾驶等，需要人类专业知识的支持，因为只有很少的数据可用。</p>
-						<p>数据成本：在某些领域，例如新药研发、材料设计等，数据收集的成本非常高，因此只有少量的数据可用。</p>
-						<p>我有什么用呢</p>
-                        <p>减少数据收集成本：在很多场景下，获取大量标注数据是非常困难和昂贵的，如医学影像诊断、语音识别等领域。而小样本学习可以利用有限的数据样本快速训练出具备一定泛化能力的模型，从而减少数据收集成本。</p>
-                        <p>改善模型鲁棒性：对于传统的机器学习算法，当遇到一些与训练数据分布有较大差异的测试数据时，往往容易出现泛化能力差的情况。而小样本学习可以让模型更加容易适应新的数据分布，从而提高模型的鲁棒性。</p>
-                        <p>适用于个性化学习：在某些应用场景下，需要为每个用户提供个性化的服务。但是，要为每个用户都收集大量的标注数据是非常不现实的。而小样本学习可以通过少量的用户数据进行训练，快速实现个性化学习。</p>
-					    <p>改进迁移学习：在迁移学习中，从源领域学习到的知识需要迁移到目标领域。如果目标领域的数据非常少，那么传统的迁移学习方法可能会失效。而小样本学习可以利用源领域数据和少量目标领域数据来进行学习，从而改进迁移学习的效果。</p>
+                    <div class="col-md-20 col-lg-10 col-xl-10">
+						<h3>我为什么会出现</h3>
+						<p style="color: rgb(86, 84, 88);">1.数据稀缺性：在某些领域，例如医疗诊断、图像识别等，获取大量的数据是非常困难的，因为需要人类专业知识、时间和资源的支持。</p>
+						<p style="color: rgb(86, 84, 88);">2.数据隐私：某些领域的数据受到法律法规的保护，例如个人健康记录等，这些数据不易获取。</p>
+						<p style="color: rgb(86, 84, 88);">3.人类专业知识：在某些领域，例如工业控制、自动驾驶等，需要人类专业知识的支持，因为只有很少的数据可用。</p>
+						<p style="color: rgb(86, 84, 88);">4.数据成本：在某些领域，例如新药研发、材料设计等，数据收集的成本非常高，因此只有少量的数据可用。</p>
+						<h3>我有什么用呢</h3>
+                        <p style="color: rgb(86, 84, 88);">1.减少数据收集成本：在很多场景下，获取大量标注数据是非常困难和昂贵的，如医学影像诊断、语音识别等领域。而小样本学习可以利用有限的数据样本快速训练出具备一定泛化能力的模型，从而减少数据收集成本。</p>
+                        <p style="color: rgb(86, 84, 88);">2.改善模型鲁棒性：对于传统的机器学习算法，当遇到一些与训练数据分布有较大差异的测试数据时，往往容易出现泛化能力差的情况。而小样本学习可以让模型更加容易适应新的数据分布，从而提高模型的鲁棒性。</p>
+                        <p style="color: rgb(86, 84, 88);">3.适用于个性化学习：在某些应用场景下，需要为每个用户提供个性化的服务。但是，要为每个用户都收集大量的标注数据是非常不现实的。而小样本学习可以通过少量的用户数据进行训练，快速实现个性化学习。</p>
+					    <p style="color: rgb(86, 84, 88);">4.改进迁移学习：在迁移学习中，从源领域学习到的知识需要迁移到目标领域。如果目标领域的数据非常少，那么传统的迁移学习方法可能会失效。而小样本学习可以利用源领域数据和少量目标领域数据来进行学习，从而改进迁移学习的效果。</p>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- Footer-->
+        <!-- Footer
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -101,7 +107,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
