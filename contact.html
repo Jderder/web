@@ -15,6 +15,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+        body{
+       background:url('assets/img/home1-bg.jpg') no-repeat;
+       background-size: cover;
+   }
+   </style>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -26,7 +32,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">主页</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">首页</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">小样本学习介绍</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">小样本学习案例</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">用户现场体验</a></li>
@@ -40,7 +46,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="page-heading">
-                            <h1>想要深入的了解我吗</h1>
+                            <h1>深入了解入口</h1>
                             <span class="subheading">和我进行一个现场交流吧</span>
                         </div>
                     </div>
@@ -51,9 +57,9 @@
         <main class="mb-4">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>首先，请进行一个自我介绍。</p>
-                        <div class="my-5">
+                    <div class="col-md-20 col-lg-10 col-xl-10">
+                        <h3 style="color: rgb(86, 84, 88);">首先，请进行一个自我介绍。</h3>
+                        <div class="my-4">
                             <!-- * * * * * * * * * * * * * * *-->
                             <!-- * * SB Forms Contact Form * *-->
                             <!-- * * * * * * * * * * * * * * *-->
@@ -64,36 +70,37 @@
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                 <div class="form-floating">
                                     <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
+                                    <label for="name">姓名</label>
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
                                 <div class="form-floating">
                                     <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
+                                    <label for="email">邮箱地址</label>
                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                 </div>
                                 <div class="form-floating">
                                     <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
+                                    <label for="phone">电话号码</label>
                                     <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                 </div>
                                 <div class="form-floating">
                                     <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
+                                    <label for="message">想留下的信息</label>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>
-								<p>接下来，让我展示一下自己</p>
-								<p>
+                                <p> </p>
+								<h3 style="color: rgb(86, 84, 88);">接下来，让我展示一下自己</h3>
+								<p style="color: rgb(86, 84, 88);">
 								    点击就看
 								    <a href="http://spaceipsum.com/">我的其中一个实现</a>
 								</p> 
-								<p>还想要更了解我一点吗</p>
-								<p>
+								<p style="color: rgb(86, 84, 88);">还想要更了解我一点吗</p>
+								<p style="color: rgb(86, 84, 88);">
 								    看看我的算法实现吧
 								    <a href="http://spaceipsum.com/">输入图片 获得结果</a>
 								</p
-                                <br />
+                                <br/>
                                 <!-- Submit success message-->
                                 <!---->
                                 <!-- This is what your users will see when the form-->
@@ -119,7 +126,7 @@
                 </div>
             </div>
         </main>
-        <!-- Footer-->
+        <!-- Footer
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -154,7 +161,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
